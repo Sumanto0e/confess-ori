@@ -1,0 +1,140 @@
+{
+  "name": "ONS PROMOTE BOT",
+  "description": "mengirim pesan ke channel telegram secara anonymous",
+  "keywords": [
+    "telegram",
+    "menfess",
+    "ONS"
+  ],
+  "repository": "https://github.com/Sumanto0e/confes-ons",
+  "logo": "https://telegra.ph/file/a24d7daa6a191d6eb7176.jpg",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Masukkan token bot kamu, didapatkan dari @Botfather",
+      "value": "5585848548:AAGVy_rekbrnMhkc2UAYrSWPQbEC3r5GBZI"
+    },
+    "API_HASH": {
+      "description": "app hash kamu, didapatkan dari my.telegram.org",
+      "value": "aecd498f68e85c1c925a6a9f95103aee"
+    },
+    "API_ID": {
+      "description": "app id kmau, didapatkan dari my.telegram.org",
+      "value": "20244703"
+    },
+    "DB_URL": {
+      "description": "dapatkan database kamu di https://cloud.mongodb.com/",
+      "value": "mongodb+srv://dimashermawan2000:dimashermawan11@onsdatabase.vcrlaan.mongodb.net/?retryWrites=true&w=majority"
+    },
+    "DB_NAME": {
+      "description": "nama database",
+      "value": "telegram"
+    },
+    "CHANNEL_1": {
+      "description": "channel id, untuk mengirim menfess",
+      "value": "-1001588432727"
+    },
+    "CHANNEL_2": {
+      "description": "grup id, untuk mengcomment dichannel menfess",
+      "value": "-1001771712186"
+    },
+    "CHANNEL_LOG": {
+      "description": "channel log id, untuk melihat log user menfess",
+      "value": "-1001850717264"
+    },
+    "ID_ADMIN": {
+      "description": "ID OWNER BOT MENFESS",
+      "value": "5458705482"
+    },
+    "BATAS_KIRIM": {
+      "description": "Batas kirim menfess perhari",
+      "value": "3"
+    },
+    "BATAS_TALENT": {
+      "description": "Batas top talent",
+      "value": "20"
+    },
+    "BATAS_DADDY_SUGAR": {
+      "description": "Batas top talent",
+      "value": "20"
+    },
+    "BATAS_MOANSGIRL": {
+      "description": "Batas top moans girl",
+      "value": "20"
+    },
+    "BATAS_MOANSBOY": {
+      "description": "Batas top moans boy",
+      "value": "20"
+    },
+    "BATAS_GFRENT": {
+      "description": "Batas top girlfriend rent",
+      "value": "20"
+    },
+    "BATAS_BFRENT": {
+      "description": "Batas top boyfriend rent",
+      "value": "20"
+    },
+    "BIAYA_KIRIM": {
+      "description": "biaya kirim user menfess",
+      "value": "20"
+    },
+    "BIAYA_TALENT": {
+      "description": "biaya rating user ke talent fwb",
+      "value": "20000"
+    },
+    "BIAYA_DADDY_SUGAR": {
+      "description": "biaya rating user ke daddy sugar fwb",
+      "value": "20000"
+    },
+    "BIAYA_MOANSGIRL": {
+      "description": "biaya rating user ke moans girl fwb",
+      "value": "20000"
+    },
+    "BIAYA_MOANSBOY": {
+      "description": "biaya rating user ke moans boy fwb",
+      "value": "20000"
+    },
+    "BIAYA_GFRENT": {
+      "description": "biaya rating user ke girl friend rent fwb",
+      "value": "20000"
+    },
+    "BIAYA_BFRENT": {
+      "description": "biaya rating user ke boy friend rent fwb",
+      "value": "20000"
+    },
+    "HASTAG": {
+      "description": "menambahkan hastag, dipisahkan dengan spasi (#girl wajib diawal dan #boy setelah girl)",
+      "value": "#onsask #onsrandom #onspil #onscurhat"
+    },
+    "PIC_BOY": {
+      "description": "gambar fwb boy",
+      "value": "https://t.me/ALTERTELEE/347"
+    },
+    "PIC_GIRL": {
+      "description": "gambar fwb girl",
+      "value": "https://t.me/ALTERTELEE/345"
+    },
+    "PESAN_JOIN": {
+      "description": "pesan join grup, atau akses ditolak",
+      "value": "Tidak dapat diakses harap join terlebih dahulu"
+    },
+    "START_MSG": {
+      "description": "pesan start pada bot",
+      "value": "Hai {fullname} 🌱\n\nIni adalah bot menfess, semua pesan yang kamu kirim akan masuk ke channel @ONSBASE secara anonymous. ketik /help"
+    },
+    "GAGAL_KIRIM": {
+      "description": "pesan ketika hastag yang diketik tidak sesuai",
+      "value": "{mention}, pesan mu gagal terkirim silahkan gunakan hastag:\n\n#onsask untuk bertanya\n#onspil untuk memberitahu\n#onscurhat untuk berbagi cerita\n#onsrandom untuk hal random"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}

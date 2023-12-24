@@ -11,7 +11,7 @@ api_hash = os.environ.get("API_HASH", "aecd498f68e85c1c925a6a9f95103aee")
 bot_token = os.environ.get("BOT_TOKEN", "5585848548:AAGVy_rekbrnMhkc2UAYrSWPQbEC3r5GBZI")
 # =========================================================== #
 
-db_url = os.environ.get("DB_URL", "mongodb+srv://dimashermawan2000:dimashermawan11@onsdatabase.vcrlaan.mongodb.net/?retryWrites=true&w=majority")
+db_url = os.environ.get("DB_URL", "mongodb+srv://dimashermawan2000:susuboneto123@onsdatabase.vcrlaan.mongodb.net/?retryWrites=true&w=majority")
 db_name = os.environ.get("DB_NAME", "telegram") #bisa diganti sesuai kebutuhan
 # =========================================================== #
 
